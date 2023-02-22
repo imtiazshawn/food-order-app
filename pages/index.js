@@ -21,7 +21,7 @@ export default function Home({ pizzaList, admin }) {
       <Featured />
       {<AddButton setClose={setClose} />}
       <PizzaList pizzaList={pizzaList} />
-      {/* {!close && <Add setClose={setClose} />} */}
+      {!close && <Add setClose={setClose} />}
     </div>
   );
 }
