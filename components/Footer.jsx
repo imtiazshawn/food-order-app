@@ -31,7 +31,7 @@ const Footer = () => {
             <br /> +880 18814-04618
           </p>
           <p className={styles.text}>
-            4000, SS. Khalid Road, Zaman Khan
+            4000, 68 SS. Khalid Road, Zaman Khan
             <br /> Chittagong, 400
             <br /> +880 18814-04618
           </p>
