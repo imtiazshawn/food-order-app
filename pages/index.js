@@ -9,6 +9,7 @@ import PizzaList from "../components/PizzaList";
 import styles from "../styles/Home.module.css";
 
 export default function Home({ pizzaList, admin }) {
+  console.log(pizzaList, admin);
   const [close, setClose] = useState(true);
   return (
     <div className={styles.container}>
@@ -17,10 +18,10 @@ export default function Home({ pizzaList, admin }) {
         <meta name="description" content="Best pizza shop in town" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Featured />
+      {/* <Featured />
       {<AddButton setClose={setClose} />}
       <PizzaList pizzaList={pizzaList} />
-      {!close && <Add setClose={setClose} />}
+      {!close && <Add setClose={setClose} />} */}
     </div>
   );
 }
