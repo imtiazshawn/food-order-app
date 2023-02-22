@@ -4,7 +4,7 @@ import Product from "../../../models/Product";
 export default async function handler(req, res) {
   const { method } = req;
 
-  dbConnect();
+  await dbConnect();
 
   if (method === "GET") {
     try {
@@ -13,6 +13,7 @@ export default async function handler(req, res) {
     } catch (err) {
       res.status(500).json(err);
     }
+    // res.send({ data: [] });
   }
 
   if (method === "POST") {
